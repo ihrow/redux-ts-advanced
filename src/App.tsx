@@ -1,6 +1,10 @@
 import React, {useEffect} from 'react';
 import {useAppDispatch, useAppSelector} from "./hooks/redux";
 import {fetchUsers} from "./store/reducers/ActionCreators";
+import PostContainer from "./components/PostContainer";
+// import app.css
+import './App.css';
+
 
 const App = () => {
   // const dispatch = useAppDispatch();
@@ -15,6 +19,7 @@ const App = () => {
       {/*{isLoading && <h1>Loading...</h1>}*/}
       {/*{error && <h1>{error}</h1>}*/}
       {/*{JSON.stringify(users, null , 2)}*/}
+      <PostContainer />
     </div>
   );
 };
